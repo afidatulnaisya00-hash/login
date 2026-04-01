@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login And Sign Up</title>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -12,8 +13,8 @@
 <div class="w-[90%] max-w-[1000px] h-[600px] bg-white rounded-3xl shadow-xl flex overflow-hidden">
 
   <!-- KIRI (GAMBAR) -->
-  <div class="w-1/2">
-    <img src="/img/bg.jpg" class="w-full h-full object-cover border-radius: var(--radius-md)">
+  <div class="w-1/2 rounded-l-3xl overflow-hidden">
+    <img src="/img/bg.jpg" alt="Background" class="w-full h-full object-cover">
   </div>
 
   <!-- KANAN -->
@@ -29,18 +30,18 @@
       </div>
 
       <input type="email" placeholder="Email"
-      class="w-full border rounded-full px-4 py-2 mb-3">
+      class="w-full border border-gray-300 rounded-full px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <input type="password" placeholder="Password"
-      class="w-full border rounded-full px-4 py-2 mb-3">
+      class="w-full border border-gray-300 rounded-full px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <div class="flex justify-between text-sm text-gray-500 mb-4">
         <label><input type="checkbox"> Remember for 30 days</label>
-        <a href="#">Forgot password?</a>
+        <a href="#" class="hover:text-blue-500">Forgot password?</a>
       </div>
 
       <button onclick="login()"
-      class="bg-blue-500 text-white w-full py-2 rounded-full font-semibold hover:bg-blue-600">
+      class="bg-blue-500 text-white w-full py-2 rounded-full font-semibold hover:bg-blue-600 transition">
       Login
       </button>
 
@@ -54,23 +55,23 @@
       <!-- Google, Apple, Facebook -->
       <div class="flex justify-center gap-4 mb-4">
 
-        <button class="w-10 h-10 border rounded-full flex items-center justify-center">
-          <img src="/img/apple.png" class="w-5 h-5 object-contain">
+        <button class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+          <img src="/img/apple.png" alt="Apple" class="w-5 h-5 object-contain">
         </button>
 
-        <button class="w-10 h-10 border rounded-full flex items-center justify-center">
-          <img src="/img/google.png" class="w-5 h-5 object-contain">
+        <button class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+          <img src="/img/google.png" alt="Google" class="w-5 h-5 object-contain">
         </button>
 
-        <button class="w-10 h-10 border rounded-full flex items-center justify-center">
-          <img src="/img/facebook.png" class="w-5 h-5 object-contain">
+        <button class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+          <img src="/img/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
         </button>
 
       </div>
 
       <p class="text-center text-sm">
         Don't have an account?
-        <button onclick="showSignup()" class="text-blue-500">Sign Up</button>
+        <button onclick="showSignup()" class="text-blue-500 font-semibold hover:underline">Sign Up</button>
       </p>
 
     </div>
@@ -81,19 +82,19 @@
       <h1 class="text-3xl font-bold text-center mb-6">Sign Up</h1>
 
       <input type="text" placeholder="First Name"
-      class="w-full border rounded-full px-4 py-2 mb-3">
+      class="w-full border border-gray-300 rounded-full px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <input type="text" placeholder="Last Name"
-      class="w-full border rounded-full px-4 py-2 mb-3">
+      class="w-full border border-gray-300 rounded-full px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <input type="email" placeholder="Email"
-      class="w-full border rounded-full px-4 py-2 mb-3">
+      class="w-full border border-gray-300 rounded-full px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <input type="password" placeholder="Password"
-      class="w-full border rounded-full px-4 py-2 mb-4">
+      class="w-full border border-gray-300 rounded-full px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
       <button onclick="signup()"
-      class="bg-blue-500 text-white w-full py-2 rounded-full font-semibold hover:bg-blue-600">
+      class="bg-blue-500 text-white w-full py-2 rounded-full font-semibold hover:bg-blue-600 transition">
       Sign Up
       </button>
 
@@ -106,23 +107,23 @@
 
       <div class="flex justify-center gap-4 mb-4">
 
-        <button class="w-10 h-10 border rounded-full flex items-center justify-center">
-          <img src="/img/apple.png" class="w-5 h-5 object-contain">
+        <button class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+          <img src="/img/apple.png" alt="Apple" class="w-5 h-5 object-contain">
         </button>
 
-        <button class="w-10 h-10 border rounded-full flex items-center justify-center">
-          <img src="/img/google.png" class="w-5 h-5 object-contain">
+        <button class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+          <img src="/img/google.png" alt="Google" class="w-5 h-5 object-contain">
         </button>
 
-        <button class="w-10 h-10 border rounded-full flex items-center justify-center">
-          <img src="/img/facebook.png" class="w-5 h-5 object-contain">
+        <button class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition">
+          <img src="/img/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
         </button>
 
       </div>
 
       <p class="text-center text-sm">
         Already have an account?
-        <button onclick="showLogin()" class="text-blue-500">Log in</button>
+        <button onclick="showLogin()" class="text-blue-500 font-semibold hover:underline">Log in</button>
       </p>
 
     </div>
@@ -133,21 +134,21 @@
 
 <script>
 function showSignup(){
-document.getElementById("loginForm").classList.add("hidden");
-document.getElementById("signupForm").classList.remove("hidden");
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("signupForm").classList.remove("hidden");
 }
 
 function showLogin(){
-document.getElementById("signupForm").classList.add("hidden");
-document.getElementById("loginForm").classList.remove("hidden");
+  document.getElementById("signupForm").classList.add("hidden");
+  document.getElementById("loginForm").classList.remove("hidden");
 }
 
 function login(){
-alert("Login berhasil");
+  alert("Login berhasil");
 }
 
 function signup(){
-alert("Akun berhasil dibuat");
+  alert("Akun berhasil dibuat");
 }
 </script>
 
